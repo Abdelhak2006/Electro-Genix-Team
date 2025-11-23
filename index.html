@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Showcase Site</title>
+  <link rel="stylesheet" href="master.css">
+  <meta name="author" content="MR.ABELHAK">
+
+</head>
+<!-- Developed by:MR.ABDELHAK -->
+
+<body>
+
+  <header class="fixed-header">
+    <div class="logo">Electro Genix</div>
+
+    <div class="menu-btn" id="mobile-menu-btn">☰</div>
+
+    <nav>
+      <ul id="action">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#Team leader">Team leader</a></li>
+        <li><a href="#Software team">Software team</a></li>
+        <li><a href="#Hardware team">Hardware team</a></li>
+        <li><a href="#projects">projects</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="intro-section">
+    <h1 class="intro-title">Electro Genix Team</h1>
+    <p class="intro-text">Under Supervision of Dr. Ibrahim Zewail</p>
+
+    <div class="intro-image">
+      <img src="photo/Dr. Ibrahim Zewail.jpg" alt="Dr. Ibrahim Zewail">
+    </div>
+
+    <p class="intro-description">
+      Electro Genix is a specialized engineering team focused on delivering integrated hardware and software
+      solutions. We combine expertise in electronics, embedded systems, and software development to design and
+      implement high-quality, smart technological systems. Our mission is to develop innovative, reliable, and scalable
+      solutions that address real-world challenges and elevate the standards of modern engineering.
+    </p>
+  </div>
+
+
+
+  <div class="container" id="Team leader">
+    <h2 class="section-title">Team leader</h2>
+    <div class="grid">
+      <div class="card"><img src="photo/Ahmed Mohamed Elzoghby.jpg" />
+        <h3>Ahmed Mohamed Elzoghby</h3>
+        <p>Team leader</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="Software team">
+    <h2 class="section-title">Software team</h2>
+    <div class="grid">
+      <div class="card"><img src="photo/Maria Mahmoud Fathi.jpg" />
+        <h3>Maria Mahmoud Fathi</h3>
+        <p>Hardware/Software Integration Engineer</p>
+      </div>
+      <div class="card"><img src="photo/Abdelrahman Ali Abdelhak.jpg" />
+        <h3>Abdelrahma Ali Abdelhak</h3>
+        <p>Frontend</p>
+      </div>
+      <div class="card"><img src="photo/Fares ali Mohamed.jpg" />
+        <h3>Fares Ali Mohamed</h3>
+        <p>Data structure</p>
+      </div>
+      <div class="card"><img src="photo/Shorouk Maher kotb Elbehiery.jpg" />
+        <h3>Shorouk Maher kotb Elbehiery</h3>
+        <p>Backend</p>
+      </div>
+      <div class="card"><img src="photo/Emad Khalaf Allah Attia.jpg" />
+        <h3>Emad Khalaf Allah Attia</h3>
+        <p>Frontend</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="Hardware team">
+    <h2 class="section-title">Hardware team</h2>
+    <div class="grid">
+      <div class="card"><img src="photo/Ahmed galal eid el-sawey.jpg" />
+        <h3>Ahmed galal eid el-sawey</h3>
+      </div>
+      <div class="card"><img src="photo/Ahmed Mohamed Abdullah Eid Ahmed.jpg" />
+        <h3>Ahmed Mohamed Abdullah Eid Ahmed</h3>
+      </div>
+      <div class="card"><img src="photo/Ebrahim Aesam Ebrahim Aamer.jpg" />
+        <h3>Ebrahim Aesam Ebrahim Aamer</h3>
+      </div>
+      <div class="card"><img src="photo/Mohamed Eid Abdelgany Eid.jpg" />
+        <h3>Mohamed Eid Abdelgany Eid</h3>
+      </div>
+      <div class="card"><img src="photo/Mohamed Samir Mohamed Abdelfatah.jpg" />
+        <h3>Mohamed Samir Mohamed Abdelfatah</h3>
+      </div>
+      <div class="card"><img src="photo/Norhan mohamed shaaban.jpg" />
+        <h3>Norhan mohamed shaaban</h3>
+      </div>
+      <div class="card"><img src="photo/Yasser Mohammed EL_Karanshawy.jpg" />
+        <h3>Yasser Mohammed EL_Karanshawy</h3>
+      </div>
+      <div class="card"><img src="photo/Alshimaa Haythm El-Batanouny.jpg" />
+        <h3>Alshimaa Haythm El-Batanouny</h3>
+      </div>
+      <div class="card"><img src="photo/Abdulrahman Mostafa Sayed Ahmed Abdelkarim.jpg" />
+        <h3>Abdulrahman Mostafa Sayed Ahmed</h3>
+      </div>
+      <div class="card"><img src="photo/Ali mohamed elaraby.jpg" />
+        <h3>Ali mohamed elaraby</h3>
+      </div>
+    </div>
+  </div>
+  <div class="container" id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="grid">
+
+      <a class="project-card" href="pdf/Power_supply.pdf" target="_blank">
+        <img src="photo/Power_supply.jpg" alt="Power_supply">
+        <h3>Power_supply</h3>
+      </a>
+
+      <a class="project-card" href="pdf/Project_Intercom.pdf" target="_blank">
+        <img src="photo/Project_Intercom.jpg" alt="Intercom">
+        <h3>Intercom</h3>
+      </a>
+
+    </div>
+  </div>
+
+  <audio id="bg-audio"></audio>
+
+  <footer>
+   © 2025 Electro Genix — Developed & Designe by Ahmed Ali Abdelhak.
+
+  </footer>
+
+  <script>
+
+    const menuButton = document.getElementById("mobile-menu-btn");
+    const menuAction = document.getElementById("action");
+
+    function toggleMenu() {
+      menuAction.classList.toggle('active');
+    }
+
+    function closeMenu() {
+      menuAction.classList.remove('active');
+    }
+
+    menuButton.addEventListener("click", (event) => {
+      event.stopPropagation();
+      toggleMenu();
+    });
+
+    document.addEventListener("click", (event) => {
+      if (!menuButton.contains(event.target) && !menuAction.contains(event.target)) {
+        closeMenu();
+      }
+    });
+
+
+
+    const tracks = [
+    "audio/track1.mp3",
+    "audio/track2.mp3",
+    "audio/track3.mp3"
+  ];
+
+  let currentTrack = 0;
+  const audio = document.getElementById("bg-audio");
+  audio.src = tracks[currentTrack];
+
+  function playAudio() {
+    audio.play();
+    document.removeEventListener("click", playAudio);
+  }
+
+  document.addEventListener("click", playAudio);
+
+  audio.addEventListener("ended", () => {
+    currentTrack = (currentTrack + 1) % tracks.length;
+    audio.src = tracks[currentTrack];
+    audio.play();
+  });
+  </script>
+</body>
+
+</html>
